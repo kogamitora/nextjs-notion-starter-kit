@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+// TODO: merge the data and icons from PageSocial with the social links in Footer
+import { AiOutlineMail } from '@react-icons/all-files/ai/AiOutlineMail'
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
@@ -14,8 +16,6 @@ import * as config from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
-
-// TODO: merge the data and icons from PageSocial with the social links in Footer
 
 export const FooterImpl: React.FC = () => {
   const [hasMounted, setHasMounted] = React.useState(false)
@@ -84,6 +84,18 @@ export const FooterImpl: React.FC = () => {
             rel='noopener noreferrer'
           >
             <FaZhihu />
+          </a>
+        )}
+
+        {config.email && (
+          <a
+            className={styles.zhihu}
+            href={`${config.email}`}
+            title={`Email @${config.zhihu}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <AiOutlineMail />
           </a>
         )}
 

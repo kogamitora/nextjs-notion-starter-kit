@@ -2,7 +2,7 @@ import { siteConfig } from './lib/site-config'
 
 export default siteConfig({
   // the site's root Notion page (required)
-  rootNotionPageId: '8a94f72c317d4e6988fa106a529872ea',
+  rootNotionPageId: '3cbc298493174cb7b8d6a49456601bb8',
 
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
@@ -19,6 +19,8 @@ export default siteConfig({
   // social usernames (optional)
   // twitter: 'transitive_bs',
   github: 'kogamitora',
+  email:
+    'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=kogamitora@gmail.com',
   // linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL

@@ -16,8 +16,7 @@ export interface SiteConfig {
   newsletter?: string
   youtube?: string
   zhihu?: string
-  mastodon?: string
-  email?: string
+  mastodon?: string;
 
   defaultPageIcon?: string | null
   defaultPageCover?: string | null
@@ -34,6 +33,7 @@ export interface SiteConfig {
 
   navigationStyle?: types.NavigationStyle
   navigationLinks?: Array<NavigationLink>
+  email?: string
 }
 
 export interface NavigationLink {
